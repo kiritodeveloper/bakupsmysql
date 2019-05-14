@@ -30,5 +30,4 @@ start %windir%\explorer.exe C:\xampp\mysql\bin\bakup\
 @echo ----------------------------------------------
 @echo --------COPIA DE RESPALDO EXITOSA-------------
 @echo ----------------------------------------------
-
 @pause
