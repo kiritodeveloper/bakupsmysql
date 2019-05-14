@@ -3,6 +3,7 @@
 title sacar backup  mysql
 color 8F
 
+@echo off
 cd C:\xampp\mysql\bin
 @echo ----------------------------------------------
 @echo PREPARANDO EL ENTORNO ...........................
@@ -26,7 +27,8 @@ mysqldump -u root -p %nombre% > C:\xampp\mysql\bin\bakup\%bakup%.sql
 @echo ABRIENDO CARPETA ...........................
 @echo ----------------------------------------------
 start %windir%\explorer.exe C:\xampp\mysql\bin\bakup\
+@echo ----------------------------------------------
+@echo --------COPIA DE RESPALDO EXITOSA-------------
+@echo ----------------------------------------------
+
 @pause
-@echo ----------------------------------------------
-@echo ---------------ABRIENDO CARPETA --------
-@echo ----------------------------------------------
