@@ -1,9 +1,8 @@
 @echo off
 
 title sacar backup  mysql
-color 9F
+color 8F
 
-@echo off
 cd C:\xampp\mysql\bin
 @echo ----------------------------------------------
 @echo PREPARANDO EL ENTORNO ...........................
@@ -20,7 +19,7 @@ cls
 @echo ----------------------------------------------
 @echo INTRODUSCA EL NOMBRE DEL BAKUP ...........................
 @echo ----------------------------------------------
-set/p bakup= ..:COmo kieres guardarlo?:..
+set/p bakup= ..:Como kieres guardarlo?:..
 cls
 mysqldump -u root -p %nombre% > C:\xampp\mysql\bin\bakup\%bakup%.sql
 @echo ----------------------------------------------
@@ -28,3 +27,6 @@ mysqldump -u root -p %nombre% > C:\xampp\mysql\bin\bakup\%bakup%.sql
 @echo ----------------------------------------------
 start %windir%\explorer.exe C:\xampp\mysql\bin\bakup\
 @pause
+@echo ----------------------------------------------
+@echo ---------------ABRIENDO CARPETA --------
+@echo ----------------------------------------------
